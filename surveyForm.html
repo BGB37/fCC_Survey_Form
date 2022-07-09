@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-     scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> fCC Survey Form </title>
+    <link rel="stylesheet" href="surveyform.css">
+    <link href="https://fonts.googleapis.com/css2?        family=Hurricane&family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <h1 id="title"> Survey Form </h1>
+  <p id="description"> Thank you for helping us to improve the   platform. </p>
+
+  <div class="container">
+    <form id="survey-form" action="" method="get">   <!-- FORM ELEMENT STARTS HERE -->
+      
+     <label for="name" id="name-label"> Name </label>
+      <input type="text" name="name" id="name" required placeholder="Enter your name">
+     
+     <label for="email" id="email-label"> Email </label>
+      
+     <input type="email" name="email" id="email" required placeholder="Enter your email">
+      
+     <label for="name">Age(optional)</label>
+     <input type="number" name="age" id="number" required placeholder="Enter your age" min="15" max="90">
+
+     <span> Which option best describes your current role? </span>
+     <select name="role" id="dropdown" required>
+      <option disable selected value=""> -- Select current role --</option>
+      <option class="ayaz" value="student"> Student </option>
+      <option value="fulltime"> Full time job </option>
+      <option value="fulltime"> Full time learner </option>
+     </select>
+     
+     <span class="recommendation"> Would you recommend freeCodeCamp to others? </span>
+     
+    <table cellspacing="5px">
+       <tr>
+        <td> <input type="radio" name="radio" class="radio" value="Definitely"> </td>                <!-- RADIO BUTTONS START HERE -->
+        <td id="definitely"> Definitely </td>
+       </tr>
+       <tr>
+        <td> <input type="radio" name="radio" class="radio" value="Maybe"> </td>
+        <td> Maybe </td>
+       </tr>
+        <td> <input type="radio" name="radio" class="radio" value="Not sure"> </td>
+         
+        <td> Not sure </td>
+      </tr>
+    </table>
+
+
+  <span class="favorite">What is your favorite feature of freeCodeCamp?     </span>
+    <select name="favfeature" required>
+     <option disable selected value=""> -- Select an option -- </option>
+     <option value="student"> Challenges </option>
+     <option value="fulltime"> Projects </option>
+     <option value="fulltime"> Community </option>
+    </select>
+
+
+    <span> What would you like to see improved? </span>
+  <table>
+     <tr>
+       <td> <input type="checkbox" value="front-end-projects" class="checkbox"> </td>
+       <td> <label for="front-end-project"class="checkbox-description"> Front-end projects  </label> </td>
+       </tr>
+    <tr>
+      <td><input type="checkbox" value="Back-end projects" class="checkbox"> </td>
+      <td> <label for="back-end-projects" class="checkbox-description"> Back-end projects </label> </td>
+    </tr>
+
+    <tr>
+      <td> <input type="checkbox" value="Data Visualization" class="checkbox"> </td>
+      <td> <label for="front-end-project" class="checkbox-description"> Data Visualization </label> </td>
+    </tr>
+    
+    <tr>
+      <td> <input type="checkbox" value="Challanges" class="checkbox"> </td>
+      <td> <label for="front-end-project" class="checkbox-description"> Challenges </label> </td>
+    </tr>
+
+    <tr>
+      <td> <input type="checkbox" value="Open Source Community" class="checkbox"> </td>
+      <td> <label for="front-end-project" class="checkbox-description"> Open Source Community </label> </td>
+    </tr>
+
+  </table>
+
+  <p> Any comments or suggestions? </p>
+  <textarea name="textarea" id="textarea" cols="45" rows="10" placeholder="Type here..."></textarea>
+  
+  <button type="submit" id="submit"> Submit </button>        <!-- SUBMIT BUTTON --> 
+  </form>                                        <!-- FORM ELEMENT END HERE -->
+   
+</div>
+
+</body>
+</html>
